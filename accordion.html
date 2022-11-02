@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+        body{
+            background-color: #e0e0e0;
+        }
+        main{
+            max-width: 1096px;
+            margin: auto;
+            padding: 1em;
+        }
+        .accordion{
+            max-width: 400px;
+            background-color: #fff;
+            margin:10px auto;
+            padding: 1em;
+            border-radius: 7px;
+        }
+        .accordion-heading{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .show-btn{
+            border: none;
+            font-size: 25px;
+            background: none;
+            cursor: pointer;
+        }
+        .accordion-body{
+            transition: all ease 0.5s;
+            max-height: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <!-- first accordion -->
+        <div class="accordion">
+            <header class="accordion-heading">
+                <h3>What Do you want</h3>
+                <button class="show-btn">
+                    <i class="bi bi-plus-lg" id="accordion-btn"></i>
+                </button>
+            </header>
+            <section class="accordion-body" id="accordion-body">
+                <p class="content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam dolores nostrum fuga veritatis praesentium provident error dicta. Enim aut porro odit quaerat. Minus, nesciunt nobis? Eaque ullam illo temporibus voluptate.
+                </p>
+            </section>
+        </div> 
+        <!-- second accordion -->
+        <div class="accordion">
+            <header class="accordion-heading">
+                <h3>How can i help you</h3>
+                <button class="show-btn">
+                 <i class="bi bi-plus-lg" id="accordion-btn"></i>                
+                </button>
+            </header>
+            <section class="accordion-body" id="accordion-body">
+                <p class="content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam dolores nostrum fuga veritatis praesentium provident error dicta. Enim aut porro odit quaerat. Minus, nesciunt nobis? Eaque ullam illo temporibus voluptate.
+                </p>
+            </section>
+        </div>
+    </main>
+</body>
+<script src="./accordion.js"></script>
+</html>
